@@ -1,2 +1,0 @@
-# devcloud-repo
-devcloud repository
