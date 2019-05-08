@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>《主干》欢迎使用华为软件开发云使用情况111111</title>
+	<meta charset="utf-8">
+	<!--修改注释改变界面颜色-->
+	<!--link rel="stylesheet" type="text/css" href="css/main.css"-->
+    <link rel="stylesheet" type="text/css" href="css/red.css"> 
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+</head>
+<body>
+	<div ng-app="myapp" ng-controller="showController">
+		<div id="header_frame" class="background_color">
+			<div id="logo"></div>
+			<!-- <div id="wave"></div> -->
+			<div id="header_right_pic"></div>
+		</div>
+		<div id="choose_type_text">请选择您的企业类型测试界面</div>
+		<div id="choose_button_frame" >
+			<button class="bg_white  button_margin_left" ng-click="changePage('software')" ng-class="{'bg_click':status.software}">软件园区 | 孵化器</button>
+			<button class="bg_white  button_margin_left" ng-click="changePage('enterprises')" ng-class="{'bg_click':status.enterprises}">互联网企业</button>
+			<button class="bg_white  button_margin_left" ng-click="changePage('school')" ng-class="{'bg_click':status.school}">高校 | 培训机构</button>			
+			<button class="bg_white " ng-click="changePage('epiboly')" ng-class="{'bg_click':status.epiboly}">软件外包行业</button>
+		</div>	
+		<div id="content_frame">
+			<div id="content_left_rim" class="software"></div>
+			<div id="content_right_rim">
+				<div class="content_right_text_box" >
+					<span ng-bind="line.one" id="line_one"></span>
+				</div>
+				<div class="content_right_text_box" >
+					<span ng-bind="line.second" id="line_second"></span>
+				</div>
+				<div class="content_right_text_box">
+					<span ng-bind="line.third" id="line_third"></span>
+				</div>
+<!--test-->
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
